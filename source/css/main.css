@@ -1,0 +1,323 @@
+/**********************************************
+*
+*
+*   General Styles
+*
+*
+**********************************************/
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-image: url('../images/texture.png');
+  -webkit-background-size: 450px;
+  -o-background-size: 450px;
+  background-size: 450px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+input[type="radio"]:checked ~ #txtQuota {
+  display: block !important;
+  top: 0;
+  left: 0;
+}
+
+@media all and (min-width: 0){
+  .panel-title {
+    font-size: 2em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+  }
+
+  #txtAutocomplete {
+    margin: .5em 1em 1em 1em;
+    width: 90%;
+  }
+  /**********************************************
+  *
+  *
+  *   IOF content
+  *
+  *
+  **********************************************/
+  .iof-wrapper {
+    padding: 2em 0 4em;
+    background-color: #50A7A0;
+    color: #fff;
+    text-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    letter-spacing: .01em;
+  }
+  .iof-wrapper .topic-title {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .iof-wrapper p {
+    font-size: 1em;
+  }
+
+  .iof-wrapper dt {
+    float: left;
+    margin-right: 10px;
+  }
+  /**********************************************
+  *
+  *
+  *   Signature
+  *
+  *
+  **********************************************/
+  .amb1lab {
+    padding: 1em 0;
+    
+    background-color: transparent;
+    color: #7DE2D1;
+    font-size: 10px;
+  }
+
+  .amb1--siganture {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    
+    background-image: url(../images/amb1-128.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    text-indent: -1001%;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+
+  .amb1lab a:hover {
+    color: #18BC9C;
+  }
+  /**********************************************
+  *
+  *
+  *   Currency Input
+  *
+  *
+  **********************************************/
+  .purchase-input {
+    font-size: 2em;
+  }
+
+  .purchase-input .input-group-addon,
+  .purchase-input .form-control {
+    padding-bottom: 0;
+    padding-top: 0;
+    
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .purchase-input .input-group-addon {
+    position: absolute;
+    top: 10px;
+  }
+
+  .purchase-input > .form-control {
+    height: auto;
+    padding: 5px 40px;
+
+    box-shadow: inset 2px 2px 5px #DEDEDE;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px;
+  }
+
+  .currency-wrapper .btn {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  /**********************************************
+  *
+  *
+  *   Conversion Icons
+  *
+  *
+  **********************************************/
+  .conversion {
+    display: table;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  .conversion small {
+    display: block;
+    margin-top: 5px;
+  }
+  .conversion::before {
+    content: '';
+    float: left;
+    margin-right: 20px;
+    margin-top: -10px;
+    height: 60px;
+    width: 60px;
+    
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    vertical-align: middle;
+  }
+  .conversion--money::before {
+    background-image: url(../images/money.svg);
+  }
+  .conversion--creditcard::before {
+    background-image: url(../images/creditcard.svg);
+  }
+  .conversion--report::before {
+    background-image: url(../images/payment.svg);
+  }
+  /**********************************************
+  *
+  *
+  *   Bootstrap Navbar
+  *
+  *
+  **********************************************/
+  .navbar-brand {
+    padding: .5em;
+  }
+
+  .navbar-brand > img {
+    display: inline;
+  }
+  /**********************************************
+  *
+  *
+  *   Country Dropdown
+  *
+  *
+  **********************************************/
+  .dropdown-menu li:hover {
+    background-color: #D5F2ED;
+  }
+  .dropdown-menu>li>a:focus, 
+  .dropdown-menu>li>a:hover {
+    background-color: #EAF8F6;
+  }
+  
+  .money-option {
+    margin: 2em 0;
+  }
+  
+  .country--item {
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  
+  .title-wrapper {
+    font-weight: bold;
+  }
+  
+  #dropdownMenu1 {
+    margin-left: 65px;
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+  }
+
+  #countryDropdown {
+    height: 50vh;
+    overflow-y: scroll;
+  }
+  /**********************************************
+  *
+  *
+  *   Flag Icons 
+  *   (complementary styles from the sprite.css)
+  *
+  *
+  **********************************************/
+  .flag-icon {
+    display: inline-block;
+    height: 2.2em;
+    vertical-align: middle;
+    width: 3em;
+  }
+  .flag-icon[class*="flag-icon-"] {
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .checkbox label, .radio label {
+    padding-left: 30px;
+  }
+  /**********************************************
+  *
+  *
+  *   NAVBAR
+  *
+  *
+  **********************************************/
+  .navbar-amb1 {
+    background-color: #58585a;
+    border-color: #49494A;
+  }
+
+  .navbar-amb1 .navbar-brand {
+    color: #fff
+  }
+}
+
+@media all and (min-width: 0){
+  .result-msg .bg-success {
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 1024px){
+  .td-label {
+    width: 300px;
+  }
+  /**********************************************
+  *
+  *
+  *   Currency Input
+  *
+  *
+  **********************************************/
+  .purchase-input .input-group-addon {
+    position: static;
+    top: 0;
+  }
+
+  .purchase-input > .form-control {
+    padding: 5px 20px;
+  }
+  /**********************************************
+  *
+  *
+  *   Country Dropdown
+  *
+  *
+  **********************************************/
+  .title-wrapper {
+    margin-top: 0;
+  }
+  /**********************************************/
+}
+

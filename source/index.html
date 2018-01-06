@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- build:ga --><!-- endbuild -->
+  <title>Calculadora IOF - Antes de importar descubra quanto é o IOF!</title>
+  <meta description="Faça a conversão de moedas e descubra o IOF da sua compra">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+  <meta name="author" content="Rhamsés Soares">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Calculadora de IOF para compras internacionais" />
+  <meta name="twitter:description" content="Faça a conversão de moedas e descubra o IOF da sua compra" />
+  <meta name="twitter:image" content="http://calculadoraiof.com.br/images/socialmedia.png" />
+  <meta property="og:url" content="http://www.calculadoraiof.com.br" />
+  <meta property="og:title" content="Calculadora de IOF para compras internacionais" />
+  <meta property="og:description" content="Faça a conversão de moedas e descubra o IOF da sua compra" />
+  <meta property="og:image" content="http://calculadoraiof.com.br/images/socialmedia.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- build:css -->
+  <link rel="stylesheet" type="text/css" href="css/sprite.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- endbuild -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico?v=2" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <main>
+    <nav class="navbar navbar-amb1">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand" href="#">
+            <img src="images/favicon/android-icon-36x36.png" alt="">
+            Calculadora de <strong>IOF</strong>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="app-wrapper" class="container">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title pull-left">Qual o valor que deseja converter?</h3>
+            <div class="input-group purchase-input">
+              <div class="input-group-addon">$</div>
+              <input class="form-control" type="number" name="txtIof" id="txtIof" placeholder="00.00" required>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <h2 class="h4 title-wrapper">Como funciona a Calculadora de IOF?</h2>
+                <p>A calculadora gera os impostos estimados para compras através de <strong>cartão de crédito</strong> no exterior assim como a de <strong>dinheiro</strong> estrangeiro.</p>
+                <p>Para isso, informe <strong>o valor desejado no campo acima</strong>, e em seguida <strong>selecione a moeda</strong> de origem que será convertida para o Real.</p>
+                <p>Assim, a calculadora conseguirá informar:</p>
+                <ul>
+                  <li>O valor do IOF estimado da compra</li>
+                  <li>O valor convertido com a cotação do momento da moeda na <strong>IBOVESPA</strong></li>
+                  <li>O valor total estimado da transação.</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h2 class="h4 title-wrapper">Em qual moeda esta compra foi feita?</h2>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="radio">
+                    <label for="dolar" class="flag-icon flag-icon-us"></label>
+                    <label>
+                      <input id="dolar" type="radio" name="rdCurrency" value="220" data-country="us" checked>Dólar Americano
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="radio">
+                    <label for="euro" class="flag-icon flag-icon-eu"></label>
+                    <label>
+                      <input id="euro" type="radio" name="rdCurrency" data-country="eu" value="978">Euro
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="radio">
+                    <label for=libra class="flag-icon flag-icon-gb"></label>
+                    <label>
+                      <input id="libra" type="radio" name="rdCurrency" data-country="gb" value="540">Libra Esterlina
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="radio">
+                    <label class="flag-icon flag-icon-ar" for="peso"></label>
+                    <label>
+                      <input type="radio" id="peso" name="rdCurrency" data-country="ar" value="706">Peso Argentino
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="radio">
+                    <label class="flag-icon flag-icon-mx" for="pesoMexicano"></label>
+                    <label>
+                      <input type="radio" id="pesoMexicano" name="rdCurrency" data-country="mx" value="741">Peso Mexicano
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="dropdown currency-wrapper">
+                    <div class="radio">
+                      <span class="flag-icon flag-icon-un"></span>
+                      <label><input type="radio" id="other" name="rdCurrency" value="" class="oth">Outra moeda</label>
+                    </div>
+                    <button class="hide btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Outra Moeda
+                    </button>
+                    <ul id="countryDropdown" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li>
+                        <input type="text" name="txtAutocomplete" id="txtAutocomplete" placeholder="Procure por um país ou uma moeda" class="form-control">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" id="btnConvert" class="btn btn-primary btn-block" title="Clique aqui para calcular o câmbio informado">Calcular câmbio</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="resultPanel" class="panel panel-default hide">
+          <div class="panel-heading">
+            <h3 id="resultTitle" style="margin-top: 5px;">Veja abaixo os resultados da sua conversão</h3>        
+          </div>
+          <div class="panel-body panel-result-wrapper">  
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="money-option">
+                  <div class="col-xs-12">
+                    <h4 class="conversion conversion--creditcard">Cartão de crédito <small>(pré pago ou internacional)</small></h4>
+                  </div>
+                  <div class="col-xs-12 col-sm-12">
+                    <div id="iofCard"></div>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-xs-12 col-sm-6">
+                <div class="money-option">
+                  <div class="col-xs-12">
+                    <h4 class="conversion conversion--money">Dinheiro <small>(para a compra de moeda estrangeira)</small></h4>
+                  </div>
+                  <div class="col-xs-12 col-sm-12">
+                    <div id="iofMoney"></div>
+                  </div>
+                </div>
+              </div>  
+              <div class="col-xs-12">
+                <div class="result-msg"></div>
+              </div>     
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="iof-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <h2 class="topic-title">1-) O que é IOF?</h2>
+            <p>IOF é a sigla para Imposto sobre Operações de Crédito, Câmbio e Seguros. Como o próprio nome diz, é um imposto que incide sobre qualquer tipo de operação de crédito, câmbio, seguro ou operações relacionadas a títulos e valores mobiliários.</p>  
+            <p><a href="http://idg.receita.fazenda.gov.br/acesso-rapido/legislacao/legislacao-por-assunto/imposto-sobre-operacoes-de-credito-cambio-e-seguro-ou-relativas-a-titulos-ou-valores-mobiliarios-iof" title="Saiba mais sobre a legislação" target="_blank">Fonte: Receita Federal</a></p>
+
+            <h2 class="topic-title">2-) Qual é a taxa do IOF? Ela é igual para todo mundo?</h2>
+            <p>Desde 2016, o governo federal atualizou os valores do imposto, ficando da seguinte maneira:</p>
+            <dl>
+              <dt>Para o uso de cartão de crédito no exterior:</dt>
+              <dd>6.38%</dd>
+              <dt>Para a compra de dinheiro estrangeiro:</dt>
+              <dd>1.1%</dd>
+            </dl>
+
+            <h2 class="topic-title">3-) Em quais operações financeiras eu posso ser taxado com IOF?</h2>
+            <p>Além das compras internacionais com cartão de crédito e dinheiro vivo estrangeiro. O recebimento de dinheiro do exterior também está condicionado a isso, além do pagamento de títulos imobiliários, ou operações financeiras em geral.</p>
+
+            <h2 class="topic-title">4-) Segundo a Legislação</h2>
+            <p>São contribuintes do IOF as pessoas físicas e as pessoas jurídicas que efetuarem operações de crédito, câmbio e seguro ou relativas a títulos ou valores mobiliários. A cobrança e o recolhimento do imposto são efetuados pelo responsável tributário: a pessoa jurídica que conceder o crédito; as instituições autorizadas a operar em câmbio; as seguradoras ou as instituições financeiras a quem estas encarregarem da cobrança do prêmio de seguro; as instituições autorizadas a operar na compra e venda de títulos ou valores mobiliários.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="amb1lab text-center">
+        <a href="http://ambiente1.com.br/" class="amb1--siganture" target="_blank" rel="follow" title="created by: Ambiente 1 - Soluções Inteligentes">created by: Ambiente 1 - Soluções Inteligentes</a>
+      </footer>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <!-- build:js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/iof.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>
+
+
+
