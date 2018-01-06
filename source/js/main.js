@@ -1,8 +1,8 @@
 var api = {
-  // currencyURL: "http://api.calculadoraiof.com.br/v1/rates/",
-  // countryURL: "http://api.calculadoraiof.com.br/v1/country"
-  currencyURL: "http://localhost/iof/api/v1/rates/",
-  countryURL: "http://localhost/iof/api/v1/country"
+  currencyURL: "http://api.calculadoraiof.com.br/v1/rates/",
+  countryURL: "http://api.calculadoraiof.com.br/v1/country"
+  // currencyURL: "http://localhost/calculadoraiof/api/v1/rates/",
+  // countryURL: "http://localhost/calculadoraiof/api/v1/country"
 };
 
 var ajax = new ambAjax();
